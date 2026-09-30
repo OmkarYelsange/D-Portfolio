@@ -1,46 +1,175 @@
-# Omkar Yelsange — Data Portfolio
+👋 Hi, I'm Omkar Yelsange
 
-Dark, recruiter-focused portfolio for a Data Analyst / Data Engineer, built with React, TypeScript, Vite and Tailwind CSS v4.
+Data Analyst | Aspiring Data Engineer | AI/ML Enthusiast
 
-## Features
+Welcome to my Data & Technology Portfolio — a collection of projects, dashboards, data solutions, and experiments focused on turning raw data into actionable insights and scalable data solutions.
 
-- Hero with an animated data pipeline (Raw Data → AWS S3 → Databricks → SQL/PySpark → Power BI); motion is disabled under `prefers-reduced-motion`
-- Recruiter snapshot with counts derived from the data files
-- Project filters and search, plus a case-study page per project (`/projects/:id`)
-- Technology-to-project matrix, skills, experience, education
-- GitHub repositories and contribution heatmap, both with error fallbacks
-- Light and dark themes (toggle in the navbar, choice remembered) with a violet / sky / pink palette; all colours are tokens at the top of `src/index.css`
-- three.js visuals (hero medallion model, site-wide drifting backdrop, small rotating shapes) loaded lazily, with still frames for reduced motion
-- Custom cursor ring (desktop only), loading screen (once per session), sticky case-study navigation, SVG chart components
-- Contact form (EmailJS), command palette (Ctrl/Cmd+K), SEO metadata, robots.txt, sitemap.xml, JSON-LD
+I’m a B.E. Robotics & Automation Engineering graduate (2026) transitioning into the software and data domain, with hands-on experience across Data Analytics, Data Engineering, SQL, Python, BI, Cloud, and AI/ML.
 
-## Structure
+---
 
-```
-src/
-  components/  UI building blocks (Hero, DataPipeline, Projects, CommandPalette, ...)
-  pages/       CaseStudy route
-  data/        siteConfig.ts, projects.ts, skills.ts, experience.ts
-public/        favicon, robots.txt, sitemap.xml, resume/ (add your PDF), projects/ (screenshots)
-```
+🚀 About Me
 
-## Setup
+- 📊 Data Analytics: SQL, Python, Excel, Power BI & Tableau
+- 🏗️ Data Engineering: Databricks, Lakehouse, AWS S3, Athena, Glue & ETL/ELT
+- 🤖 AI/ML: Python, Generative AI, NLP & Gemini API
+- 💻 Development: JavaScript, React.js, Node.js, Express.js & REST APIs
+- 🗄️ Databases: MySQL, PostgreSQL, MongoDB & Firebase
+- ☁️ Cloud & Platforms: AWS & Databricks
+- 📈 Interested in building data pipelines, analytics solutions, dashboards and intelligent applications
 
-```
-npm install
-cp .env.example .env   # fill in EmailJS values
-npm run dev
-npm run build
-```
+«My focus: Transforming data into insights, pipelines, and intelligent solutions that solve real-world problems.»
 
-## Environment variables
+---
 
-`VITE_EMAILJS_SERVICE_ID`, `VITE_EMAILJS_TEMPLATE_ID`, `VITE_EMAILJS_PUBLIC_KEY`. The EmailJS template should use `{{name}}`, `{{email}}` and `{{message}}`. Never commit `.env`.
+🛠️ Technical Skills
 
-## Content rule
+📊 Data Analytics & BI
 
-Nothing is invented. Blank fields in `projects.ts`, `experience.ts` and `siteConfig.ts` show "To be added" or are hidden until you fill them.
+"SQL" "Python" "Pandas" "NumPy" "Excel" "Power BI" "Tableau"
 
-## Deployment
+🏗️ Data Engineering
 
-Import the repo in Vercel (framework preset: Vite). Add a rewrite of all paths to `/index.html` so `/projects/:id` works on refresh, and set the EmailJS variables in the project settings.
+"Databricks" "Lakehouse" "AWS S3" "AWS Athena" "AWS Glue" "ETL/ELT" "Medallion Architecture" "Data Pipelines"
+
+💻 Programming & Development
+
+"Python" "SQL" "JavaScript" "C++" "HTML5" "CSS3"
+
+🗄️ Databases
+
+"MySQL" "PostgreSQL" "MongoDB" "Firebase/Firestore"
+
+🤖 AI / ML
+
+"Generative AI" "NLP" "Gemini API" "Machine Learning Fundamentals"
+
+🌐 Web Technologies
+
+"React.js" "Node.js" "Express.js" "REST APIs" "Tailwind CSS"
+
+🔧 Tools & Platforms
+
+"Git" "GitHub" "VS Code" "Postman" "Vercel" "Netlify"
+
+---
+
+📌 Featured Projects
+
+🚕 GoodCabs — Data Engineering & Analytics
+
+Tech: Databricks • AWS S3 • SQL • Medallion Architecture
+
+Built a data engineering workflow using the Bronze → Silver → Gold architecture to process and transform transportation data into analytics-ready datasets.
+
+Key Focus: Data ingestion • Transformation • Data quality • Lakehouse architecture • Analytics
+
+---
+
+🚖 OLA Ride Analytics Dashboard
+
+Tech: SQL • Power BI • Excel
+
+Analyzed 100K+ ride-booking records to identify booking trends, revenue patterns, cancellations, customer behavior and operational KPIs.
+
+Key Focus: Data cleaning • SQL analysis • KPI development • Interactive dashboards • Business insights
+
+---
+
+🏠 Airbnb Data Analysis
+
+Tech: Python • Pandas • NumPy • Matplotlib • EDA
+
+Performed exploratory data analysis on 20K+ Airbnb listings to understand pricing, availability, location-based patterns and other business factors.
+
+---
+
+📦 Zepto Analytics Dashboard
+
+Tech: Power BI • Excel • Data Analysis
+
+Created an interactive business dashboard to analyze product, inventory, sales and category-level performance.
+
+---
+
+🤖 AI Chatbot
+
+Tech: Python • Flask • NLP • Gemini API
+
+Developed an AI-powered chatbot capable of processing user queries and generating conversational responses through an AI API.
+
+---
+
+📈 What I Build
+
+Raw Data
+   ↓
+Data Cleaning & Transformation
+   ↓
+ETL / ELT Pipelines
+   ↓
+Data Warehouse / Lakehouse
+   ↓
+SQL Analysis
+   ↓
+Power BI / Tableau Dashboards
+   ↓
+Business Insights
+   ↓
+AI / ML Applications
+
+I enjoy working across the complete data lifecycle — from data ingestion and transformation to analytics, visualization and intelligent applications.
+
+---
+
+🎯 Career Focus
+
+I am actively building my career around:
+
+Data Engineering → Data Analytics → Machine Learning / AI
+
+I'm particularly interested in opportunities involving:
+
+- Data Engineering
+- Data Analytics
+- Business Intelligence
+- Analytics Engineering
+- Python / SQL Development
+- Machine Learning & AI
+- Data-driven Software Development
+
+---
+
+📚 Currently Learning
+
+- Advanced SQL & PostgreSQL
+- Python for Data Engineering
+- Data Structures & Algorithms
+- Advanced Databricks
+- AWS Data Engineering
+- Data Warehousing
+- ETL/ELT & Data Pipelines
+- Machine Learning
+- Generative AI
+
+---
+
+🌐 Portfolio & Profiles
+
+- 🌐 Portfolio: [Your Portfolio Website]
+- 💼 LinkedIn: [LinkedIn Profile]
+- 🐙 GitHub: [GitHub Profile]
+
+---
+
+📫 Let's Connect
+
+I'm always interested in data, engineering, AI, technology and real-world problem solving.
+
+If you're working on something interesting in the data/technology space, feel free to connect and collaborate.
+
+⭐ Explore my repositories to see my projects, dashboards, analysis and continuous learning journey.
+
+---
+
+⚡ Turning Data Into Insights. Building Pipelines. Creating Intelligent Solutions.
