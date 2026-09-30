@@ -1,175 +1,132 @@
-👋 Hi, I'm Omkar Yelsange
+# 👋 Hi, I'm Omkar Yelsange
 
-Data Analyst | Aspiring Data Engineer | AI/ML Enthusiast
+### Data Analyst | Aspiring Data Engineer | AI/ML Enthusiast
 
-Welcome to my Data & Technology Portfolio — a collection of projects, dashboards, data solutions, and experiments focused on turning raw data into actionable insights and scalable data solutions.
+Welcome to my **Data & Technology Portfolio** — a collection of projects, dashboards, data solutions, and experiments focused on transforming raw data into **actionable insights and scalable data solutions**.
 
-I’m a B.E. Robotics & Automation Engineering graduate (2026) transitioning into the software and data domain, with hands-on experience across Data Analytics, Data Engineering, SQL, Python, BI, Cloud, and AI/ML.
-
----
-
-🚀 About Me
-
-- 📊 Data Analytics: SQL, Python, Excel, Power BI & Tableau
-- 🏗️ Data Engineering: Databricks, Lakehouse, AWS S3, Athena, Glue & ETL/ELT
-- 🤖 AI/ML: Python, Generative AI, NLP & Gemini API
-- 💻 Development: JavaScript, React.js, Node.js, Express.js & REST APIs
-- 🗄️ Databases: MySQL, PostgreSQL, MongoDB & Firebase
-- ☁️ Cloud & Platforms: AWS & Databricks
-- 📈 Interested in building data pipelines, analytics solutions, dashboards and intelligent applications
-
-«My focus: Transforming data into insights, pipelines, and intelligent solutions that solve real-world problems.»
+I am a **B.E. Robotics & Automation Engineering graduate (2026)** transitioning into the software and data domain, with hands-on experience in **Data Analytics, Data Engineering, SQL, Python, Business Intelligence, Cloud, and AI/ML**.
 
 ---
 
-🛠️ Technical Skills
+## 🚀 About Me
 
-📊 Data Analytics & BI
+- 📊 **Data Analytics:** SQL, Python, Excel, Power BI & Tableau
+- 🏗️ **Data Engineering:** Databricks, Lakehouse, AWS S3, Athena, Glue & ETL/ELT
+- 🤖 **AI/ML:** Python, Generative AI, NLP & Gemini API
+- 💻 **Development:** JavaScript, React.js, Node.js, Express.js & REST APIs
+- 🗄️ **Databases:** MySQL, PostgreSQL, MongoDB & Firebase
+- ☁️ **Cloud:** AWS & Databricks
+- 📈 Interested in building **data pipelines, analytics solutions, dashboards and intelligent applications**
 
-"SQL" "Python" "Pandas" "NumPy" "Excel" "Power BI" "Tableau"
-
-🏗️ Data Engineering
-
-"Databricks" "Lakehouse" "AWS S3" "AWS Athena" "AWS Glue" "ETL/ELT" "Medallion Architecture" "Data Pipelines"
-
-💻 Programming & Development
-
-"Python" "SQL" "JavaScript" "C++" "HTML5" "CSS3"
-
-🗄️ Databases
-
-"MySQL" "PostgreSQL" "MongoDB" "Firebase/Firestore"
-
-🤖 AI / ML
-
-"Generative AI" "NLP" "Gemini API" "Machine Learning Fundamentals"
-
-🌐 Web Technologies
-
-"React.js" "Node.js" "Express.js" "REST APIs" "Tailwind CSS"
-
-🔧 Tools & Platforms
-
-"Git" "GitHub" "VS Code" "Postman" "Vercel" "Netlify"
+> **My focus:** Turning data into meaningful insights, reliable pipelines, and intelligent solutions that solve real-world problems.
 
 ---
 
-📌 Featured Projects
+## 🛠️ Technical Skills
 
-🚕 GoodCabs — Data Engineering & Analytics
+### 📊 Data Analytics & Business Intelligence
+`SQL` `Python` `Pandas` `NumPy` `Excel` `Power BI` `Tableau`
 
-Tech: Databricks • AWS S3 • SQL • Medallion Architecture
+### 🏗️ Data Engineering
+`Databricks` `Lakehouse` `AWS S3` `AWS Athena` `AWS Glue` `ETL/ELT` `Data Pipelines` `Medallion Architecture`
 
-Built a data engineering workflow using the Bronze → Silver → Gold architecture to process and transform transportation data into analytics-ready datasets.
+### 💻 Programming
+`Python` `SQL` `JavaScript` `C++` `HTML5` `CSS3`
 
-Key Focus: Data ingestion • Transformation • Data quality • Lakehouse architecture • Analytics
+### 🗄️ Databases
+`MySQL` `PostgreSQL` `MongoDB` `Firebase / Firestore`
 
----
+### 🤖 AI / Machine Learning
+`Generative AI` `NLP` `Gemini API` `Machine Learning Fundamentals`
 
-🚖 OLA Ride Analytics Dashboard
+### 🌐 Web Development
+`React.js` `Node.js` `Express.js` `REST APIs` `Tailwind CSS`
 
-Tech: SQL • Power BI • Excel
-
-Analyzed 100K+ ride-booking records to identify booking trends, revenue patterns, cancellations, customer behavior and operational KPIs.
-
-Key Focus: Data cleaning • SQL analysis • KPI development • Interactive dashboards • Business insights
-
----
-
-🏠 Airbnb Data Analysis
-
-Tech: Python • Pandas • NumPy • Matplotlib • EDA
-
-Performed exploratory data analysis on 20K+ Airbnb listings to understand pricing, availability, location-based patterns and other business factors.
+### 🔧 Tools & Platforms
+`Git` `GitHub` `VS Code` `Postman` `Vercel` `Netlify`
 
 ---
 
-📦 Zepto Analytics Dashboard
+## 📌 Featured Projects
 
-Tech: Power BI • Excel • Data Analysis
+### 🚕 GoodCabs — Data Engineering & Analytics
 
-Created an interactive business dashboard to analyze product, inventory, sales and category-level performance.
+**Tech Stack:** `Databricks` `AWS S3` `SQL` `Medallion Architecture`
+
+Built a data engineering workflow using **Bronze → Silver → Gold** architecture to ingest, transform and prepare transportation data for analytics.
+
+**Key Areas:**
+- Data ingestion and transformation
+- Data cleaning and quality
+- Medallion architecture
+- Lakehouse concepts
+- Analytics-ready datasets
 
 ---
 
-🤖 AI Chatbot
+### 🚖 OLA Ride Analytics Dashboard
 
-Tech: Python • Flask • NLP • Gemini API
+**Tech Stack:** `SQL` `Power BI` `Excel`
 
-Developed an AI-powered chatbot capable of processing user queries and generating conversational responses through an AI API.
+Analyzed **100K+ ride-booking records** to identify trends and business KPIs related to bookings, revenue, cancellations and customer behavior.
+
+**Key Areas:**
+- Data cleaning
+- SQL analysis
+- KPI development
+- Interactive Power BI dashboards
+- Business insights
 
 ---
 
-📈 What I Build
+### 🏠 Airbnb Data Analysis
 
+**Tech Stack:** `Python` `Pandas` `NumPy` `EDA`
+
+Performed exploratory data analysis on **20K+ Airbnb listings** to identify pricing, availability, location and listing-related patterns.
+
+**Key Areas:**
+- Data preprocessing
+- Exploratory Data Analysis
+- Statistical analysis
+- Data visualization
+- Business insights
+
+---
+
+### 📦 Zepto Analytics Dashboard
+
+**Tech Stack:** `Power BI` `Excel` `Data Analysis`
+
+Developed an interactive dashboard to analyze product, inventory, category and sales-related performance.
+
+---
+
+### 🤖 AI Chatbot
+
+**Tech Stack:** `Python` `Flask` `NLP` `Gemini API`
+
+Developed an AI-powered chatbot capable of processing user queries and generating conversational responses using an AI API.
+
+---
+
+## 📈 My Data Journey
+
+```text
 Raw Data
-   ↓
-Data Cleaning & Transformation
-   ↓
-ETL / ELT Pipelines
-   ↓
+    ↓
+Data Cleaning
+    ↓
+ETL / ELT
+    ↓
 Data Warehouse / Lakehouse
-   ↓
+    ↓
 SQL Analysis
-   ↓
-Power BI / Tableau Dashboards
-   ↓
+    ↓
+Power BI / Tableau
+    ↓
 Business Insights
-   ↓
-AI / ML Applications
+    ↓
+Machine Learning / AI
 
-I enjoy working across the complete data lifecycle — from data ingestion and transformation to analytics, visualization and intelligent applications.
-
----
-
-🎯 Career Focus
-
-I am actively building my career around:
-
-Data Engineering → Data Analytics → Machine Learning / AI
-
-I'm particularly interested in opportunities involving:
-
-- Data Engineering
-- Data Analytics
-- Business Intelligence
-- Analytics Engineering
-- Python / SQL Development
-- Machine Learning & AI
-- Data-driven Software Development
-
----
-
-📚 Currently Learning
-
-- Advanced SQL & PostgreSQL
-- Python for Data Engineering
-- Data Structures & Algorithms
-- Advanced Databricks
-- AWS Data Engineering
-- Data Warehousing
-- ETL/ELT & Data Pipelines
-- Machine Learning
-- Generative AI
-
----
-
-🌐 Portfolio & Profiles
-
-- 🌐 Portfolio: [Your Portfolio Website]
-- 💼 LinkedIn: [LinkedIn Profile]
-- 🐙 GitHub: [GitHub Profile]
-
----
-
-📫 Let's Connect
-
-I'm always interested in data, engineering, AI, technology and real-world problem solving.
-
-If you're working on something interesting in the data/technology space, feel free to connect and collaborate.
-
-⭐ Explore my repositories to see my projects, dashboards, analysis and continuous learning journey.
-
----
-
-⚡ Turning Data Into Insights. Building Pipelines. Creating Intelligent Solutions.
+```
