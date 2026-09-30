@@ -4,7 +4,7 @@
 
 Welcome to my **Data & Technology Portfolio** — a collection of projects, dashboards, data solutions, and experiments focused on transforming raw data into **actionable insights and scalable data solutions**.
 
-I am a **B.E. Robotics & Automation Engineering graduate (2026)** transitioning into the software and data domain, with hands-on experience in **Data Analytics, Data Engineering, SQL, Python, Business Intelligence, Cloud, and AI/ML**.
+I am a **B.E. Engineering Graduate (2026)** transitioning into the software and data domain, with hands-on experience in **Data Analytics, Data Engineering, SQL, Python, Business Intelligence, Cloud, and AI/ML**.
 
 ---
 
