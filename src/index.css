@@ -35,3 +35,5 @@ html[data-theme=light]{color-scheme:light;--color-bg:#F1EFFB;--color-bg2:#E7E9F8
 background:radial-gradient(60% 50% at 10% 0%,rgba(139,124,255,.32),transparent 70%),radial-gradient(45% 40% at 95% 6%,rgba(56,189,248,.28),transparent 70%),radial-gradient(55% 45% at 65% 100%,rgba(244,114,182,.24),transparent 70%),var(--color-bg);background-attachment:fixed}
 html[data-theme=light] .grid-bg{background-image:linear-gradient(rgba(60,50,160,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(60,50,160,.07) 1px,transparent 1px)}
 .bg-card{backdrop-filter:blur(8px)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.marquee{display:flex;width:max-content;animation:marquee 32s linear infinite}

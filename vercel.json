@@ -1,1 +1,4 @@
-{ "rewrites": [{ "source": "/((?!assets|resume|projects).*)", "destination": "/index.html" }] }
+{
+  "functions": { "api/chat.ts": { "includeFiles": "src/data/knowledge.json" } },
+  "rewrites": [{ "source": "/((?!api/|assets/|resume/).*)", "destination": "/index.html" }]
+}

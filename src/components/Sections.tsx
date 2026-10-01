@@ -19,11 +19,16 @@ export const Skills = () => (
 
 export const Experience = () => (
   <S id="experience" title="Experience">
-    <ol data-stagger className="stagger space-y-6 border-l border-white/15 pl-6">
+    <ol data-stagger className="stagger space-y-5 border-l border-white/15 pl-6">
       {experience.map(e => (
-        <li key={e.company}><h3 className="font-semibold">{e.role} <span className="text-fg2">· {e.company}</span></h3>
-          {e.dates && <p className="text-sm text-muted">{e.dates}</p>}
-          {e.points.length > 0 && <ul className="mt-2 list-disc pl-5 text-fg2">{e.points.map(p => <li key={p}>{p}</li>)}</ul>}</li>))}
+        <li key={e.company + e.role} className="relative rounded-2xl border border-white/10 bg-card p-5">
+          <span className={`absolute -left-[31px] top-6 h-3 w-3 rounded-full ${e.current ? 'animate-pulse bg-accent' : 'bg-muted'}`} aria-hidden />
+          <div className="flex flex-wrap items-center gap-2"><h3 className="font-semibold">{e.role}</h3><span className="rounded-full bg-white/5 px-2 py-0.5 font-mono text-xs text-fg2">{e.type}</span>{e.current && <span className="rounded-full bg-accent/15 px-2 py-0.5 font-mono text-xs text-accent">Current</span>}</div>
+          <p className="text-fg2">{e.company}</p>
+          <p className="text-sm text-muted">{e.dates || 'Dates to be added'}</p>
+          {e.points.length > 0 ? <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-fg2">{e.points.map(p => <li key={p}>{p}</li>)}</ul> : <p className="mt-3 text-sm text-muted">Details to be added.</p>}
+          {e.tech.length > 0 && <ul className="mt-3 flex flex-wrap gap-2">{e.tech.map(t => <li key={t} className="rounded-md bg-white/5 px-2 py-1 font-mono text-xs text-fg2">{t}</li>)}</ul>}
+        </li>))}
     </ol>
   </S>)
 

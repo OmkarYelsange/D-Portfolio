@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
 import { Star, GitFork } from 'lucide-react'
 import { siteConfig } from '../data/siteConfig'
+import { education } from '../data/education'
 import { Heatmap } from './Extras'
 
 const S = ({ id, title, sub, children }: { id?: string; title: string; sub?: string; children: React.ReactNode }) => (
@@ -23,9 +24,9 @@ export const WhatIBuild = () => (
     {build.map(([t, d]) => <div key={t} className="rounded-2xl border border-white/10 bg-card p-6"><h3 className="font-semibold text-accent">{t}</h3><p className="mt-2 text-fg2">{d}</p></div>)}</div></S>)
 
 export const Education = () => (
-  <S title="Education"><div className="max-w-md rounded-2xl border border-white/10 bg-card p-6">
-    <h3 className="font-semibold">B.E. Robotics &amp; Automation Engineering</h3>
-    <p className="text-fg2">D Y Patil College of Engineering, Akurdi, Pune</p><p className="text-sm text-muted">2022–2026</p></div></S>)
+  <S id="education" title="Education"><ol data-stagger className="stagger grid gap-4 md:grid-cols-3">
+    {education.map(e => <li key={e.degree} className="rounded-2xl border border-white/10 bg-card p-5"><p className="font-mono text-xs text-cyan">{e.years}</p><h3 className="mt-1 font-semibold">{e.degree}</h3><p className="text-sm text-fg2">{e.school}</p><p className="mt-3 inline-block rounded-full bg-accent/15 px-3 py-1 font-mono text-xs text-accent">{e.score}</p></li>)}
+  </ol></S>)
 
 interface Repo { id: number; name: string; description: string | null; language: string | null; stargazers_count: number; forks_count: number; pushed_at: string; html_url: string }
 export function GitHub() {
