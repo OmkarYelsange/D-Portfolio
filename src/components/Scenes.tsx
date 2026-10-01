@@ -37,5 +37,5 @@ export function Shape3D({ kind = 'ico' }: { kind?: 'ico' | 'torus' }) {
     return (dt: number) => { m.rotation.y += dt * 0.4; m.rotation.x += (py - m.rotation.x % 0.001) * 0; m.position.x += (px - m.position.x) * 0.05; m.position.y += (-py - m.position.y) * 0.05; core.rotation.y -= dt * 0.8; mat.color.set(accent()); im.color.set(palette()[1]) }
   }, [kind])
   useScene(ref, build, 40, 6)
-  return <div ref={ref} className="h-56 w-full sm:h-72" role="img" aria-label="Decorative rotating 3D wireframe" />
+  return <div ref={ref} className="relative h-56 w-full min-w-0 overflow-hidden sm:h-72" role="img" aria-label="Decorative rotating 3D wireframe" />
 }

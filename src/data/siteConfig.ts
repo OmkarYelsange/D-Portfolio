@@ -8,7 +8,7 @@ export const siteConfig = {
   email: 'omkaryelsange1010@gmail.com',
   social: {
     github: 'https://github.com/OmkarYelsange',
-    linkedin: '', // TODO: full LinkedIn URL (handle: omkar-yelsange)
+    linkedin: 'https://www.linkedin.com/in/omkar-yelsange',
     x: '',        // TODO
     hashnode: '', // TODO
   },

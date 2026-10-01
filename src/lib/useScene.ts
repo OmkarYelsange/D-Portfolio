@@ -12,7 +12,7 @@ export function useScene(ref: RefObject<HTMLDivElement | null>, build: (c: Ctx) 
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches
     let r: THREE.WebGLRenderer
     try { r = new THREE.WebGLRenderer({ antialias: true, alpha: true }) } catch { return }
-    r.setPixelRatio(Math.min(devicePixelRatio, 1.5)); el.appendChild(r.domElement)
+    r.setPixelRatio(Math.min(devicePixelRatio, 1.5)); Object.assign(r.domElement.style, { position: 'absolute', inset: '0' }); el.appendChild(r.domElement)
     const scene = new THREE.Scene(); const cam = new THREE.PerspectiveCamera(fov, 1, 0.1, 100); cam.position.z = z
     const ds: { dispose(): void }[] = []
     const update = build({ scene, cam, track: d => ds.push(d) })
