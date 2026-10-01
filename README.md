@@ -1,46 +1,132 @@
-# Omkar Yelsange — Data Portfolio
+# 👋 Hi, I'm Omkar Yelsange
 
-Dark, recruiter-focused portfolio for a Data Analyst / Data Engineer, built with React, TypeScript, Vite and Tailwind CSS v4.
+### Data Analyst | Aspiring Data Engineer | AI/ML Enthusiast
 
-## Features
-- Hero with an animated data pipeline (Raw Data → AWS S3 → Databricks → SQL/PySpark → Power BI); motion is disabled under `prefers-reduced-motion`
-- Recruiter snapshot with counts derived from the data files
-- Project filters and search, plus a case-study page per project (`/projects/:id`)
-- Technology-to-project matrix, skills, experience, education
-- GitHub repositories and contribution heatmap, both with error fallbacks
-- Light and dark themes (toggle in the navbar, choice remembered) with a violet / sky / pink palette; all colours are tokens at the top of `src/index.css`
-- three.js visuals (hero medallion model, site-wide drifting backdrop, small rotating shapes) loaded lazily, with still frames for reduced motion
-- Custom cursor ring (desktop only), loading screen (once per session), sticky case-study navigation, SVG chart components
-- Contact form (EmailJS), command palette (Ctrl/Cmd+K), SEO metadata, robots.txt, sitemap.xml, JSON-LD
+Welcome to my **Data & Technology Portfolio** — a collection of projects, dashboards, data solutions, and experiments focused on transforming raw data into **actionable insights and scalable data solutions**.
 
-## Structure
+I am a **B.E. Engineering Graduate (2026)** transitioning into the software and data domain, with hands-on experience in **Data Analytics, Data Engineering, SQL, Python, Business Intelligence, Cloud, and AI/ML**.
+
+---
+
+## 🚀 About Me
+
+- 📊 **Data Analytics:** SQL, Python, Excel, Power BI & Tableau
+- 🏗️ **Data Engineering:** Databricks, Lakehouse, AWS S3, Athena, Glue & ETL/ELT
+- 🤖 **AI/ML:** Python, Generative AI, NLP & Gemini API
+- 💻 **Development:** JavaScript, React.js, Node.js, Express.js & REST APIs
+- 🗄️ **Databases:** MySQL, PostgreSQL, MongoDB & Firebase
+- ☁️ **Cloud:** AWS & Databricks
+- 📈 Interested in building **data pipelines, analytics solutions, dashboards and intelligent applications**
+
+> **My focus:** Turning data into meaningful insights, reliable pipelines, and intelligent solutions that solve real-world problems.
+
+---
+
+## 🛠️ Technical Skills
+
+### 📊 Data Analytics & Business Intelligence
+`SQL` `Python` `Pandas` `NumPy` `Excel` `Power BI` `Tableau`
+
+### 🏗️ Data Engineering
+`Databricks` `Lakehouse` `AWS S3` `AWS Athena` `AWS Glue` `ETL/ELT` `Data Pipelines` `Medallion Architecture`
+
+### 💻 Programming
+`Python` `SQL` `JavaScript` `C++` `HTML5` `CSS3`
+
+### 🗄️ Databases
+`MySQL` `PostgreSQL` `MongoDB` `Firebase / Firestore`
+
+### 🤖 AI / Machine Learning
+`Generative AI` `NLP` `Gemini API` `Machine Learning Fundamentals`
+
+### 🌐 Web Development
+`React.js` `Node.js` `Express.js` `REST APIs` `Tailwind CSS`
+
+### 🔧 Tools & Platforms
+`Git` `GitHub` `VS Code` `Postman` `Vercel` `Netlify`
+
+---
+
+## 📌 Featured Projects
+
+### 🚕 GoodCabs — Data Engineering & Analytics
+
+**Tech Stack:** `Databricks` `AWS S3` `SQL` `Medallion Architecture`
+
+Built a data engineering workflow using **Bronze → Silver → Gold** architecture to ingest, transform and prepare transportation data for analytics.
+
+**Key Areas:**
+- Data ingestion and transformation
+- Data cleaning and quality
+- Medallion architecture
+- Lakehouse concepts
+- Analytics-ready datasets
+
+---
+
+### 🚖 OLA Ride Analytics Dashboard
+
+**Tech Stack:** `SQL` `Power BI` `Excel`
+
+Analyzed **100K+ ride-booking records** to identify trends and business KPIs related to bookings, revenue, cancellations and customer behavior.
+
+**Key Areas:**
+- Data cleaning
+- SQL analysis
+- KPI development
+- Interactive Power BI dashboards
+- Business insights
+
+---
+
+### 🏠 Airbnb Data Analysis
+
+**Tech Stack:** `Python` `Pandas` `NumPy` `EDA`
+
+Performed exploratory data analysis on **20K+ Airbnb listings** to identify pricing, availability, location and listing-related patterns.
+
+**Key Areas:**
+- Data preprocessing
+- Exploratory Data Analysis
+- Statistical analysis
+- Data visualization
+- Business insights
+
+---
+
+### 📦 Zepto Analytics Dashboard
+
+**Tech Stack:** `Power BI` `Excel` `Data Analysis`
+
+Developed an interactive dashboard to analyze product, inventory, category and sales-related performance.
+
+---
+
+### 🤖 AI Chatbot
+
+**Tech Stack:** `Python` `Flask` `NLP` `Gemini API`
+
+Developed an AI-powered chatbot capable of processing user queries and generating conversational responses using an AI API.
+
+---
+
+## 📈 My Data Journey
+
+```text
+Raw Data
+    ↓
+Data Cleaning
+    ↓
+ETL / ELT
+    ↓
+Data Warehouse / Lakehouse
+    ↓
+SQL Analysis
+    ↓
+Power BI / Tableau
+    ↓
+Business Insights
+    ↓
+Machine Learning / AI
+
 ```
-src/
-  components/  UI building blocks (Hero, DataPipeline, Projects, CommandPalette, ...)
-  pages/       CaseStudy route
-  data/        siteConfig.ts, projects.ts, skills.ts, experience.ts
-public/        favicon, robots.txt, sitemap.xml, resume/ (add your PDF), projects/ (screenshots)
-```
-
-## Setup
-```
-npm install
-cp .env.example .env   # fill in EmailJS values
-npm run dev
-npm run build
-```
-
-## Environment variables
-`VITE_EMAILJS_SERVICE_ID`, `VITE_EMAILJS_TEMPLATE_ID`, `VITE_EMAILJS_PUBLIC_KEY`. The EmailJS template should use `{{name}}`, `{{email}}` and `{{message}}`. Never commit `.env`.
-
-## Content rule
-Nothing is invented. Blank fields in `projects.ts`, `experience.ts` and `siteConfig.ts` show "To be added" or are hidden until you fill them.
-
-## Deployment
-Import the repo in Vercel (framework preset: Vite). Add a rewrite of all paths to `/index.html` so `/projects/:id` works on refresh, and set the EmailJS variables in the project settings.
-
-## Terminal and AI assistant
-- **Terminal**: click "Terminal" in the navbar or press the backtick key. Commands: `help`, `about`, `work`, `skills`, `experience`, `education`, `contact`, `projects`, `open <id>`, `goto <section>`, `ask <question>`, `theme dark|light`, `resume`, `github`, `linkedin`, `neofetch`, `clear`, `exit`.
-- **AI assistant** ("Ask AI"): suggested questions answer instantly from `src/data/knowledge.json`. Free-text questions go to `api/chat.ts`, a Vercel serverless function that calls Gemini with the same knowledge, so the key never reaches the browser.
-- Set `GEMINI_API_KEY` (and optionally `GEMINI_MODEL`) in Vercel → Project → Settings → Environment Variables. Do not prefix it with `VITE_`. Without it, or when running plain `npm run dev`, the assistant falls back to keyword matching over the same knowledge. To test the real API locally, use `npx vercel dev`.
-- Keep `src/data/knowledge.json` in sync with your other data files; the assistant only knows what is in it.
