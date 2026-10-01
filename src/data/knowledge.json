@@ -1,0 +1,77 @@
+{
+ "profile": [
+  "Name: Omkar Yelsange. Positioning: Data Analyst | Data Engineer | Data & ML Enthusiast.",
+  "Location: Pune / Lonavala, Maharashtra, India. Open to relocation across India.",
+  "Current role: Data Analyst at Autoline Industries Ltd., June 2026 to present. Work includes collecting live sensor data from physical industrial grinding machines.",
+  "Placement: received an offer from Autoline Industries after a GET interview in June 2025.",
+  "Internships (three): Data Analyst at Autoline Industries Ltd.; Project Management Intern at Lumax Cornaglia Auto Technologies; Full Stack Developer Intern at Drushya Digital India Pvt. Ltd. Exact dates and responsibilities for the internships are not published on the site.",
+  "Education: B.E. Robotics & Automation Engineering, D Y Patil College of Engineering, Akurdi, Pune, 2022-2026, CGPA 8.90/10. HSC (12th): D P Mehta Jr College, Lonavala, 2021-2022, 64.33%. SSC (10th): Adv Bapusaheb Bhonde High School, Lonavala, 2019-2020, 80%.",
+  "Target roles: Data Analyst, Data Engineer / Junior Data Engineer, Data Scientist / Junior Data Scientist, Business Intelligence, Data / ML roles.",
+  "Journey: started in Robotics & Automation engineering, moved toward software development, then data analytics, data engineering and data + ML.",
+  "Skills - Programming: Python, SQL, C++, JavaScript, HTML, CSS. Analytics: Power BI, Excel, DAX, EDA, data cleaning, data visualization, KPI analysis. Data engineering: Databricks, PySpark, AWS S3, AWS Athena, AWS Glue, ETL/ELT, data warehousing, Medallion architecture. Databases: MySQL, PostgreSQL, MongoDB, Cloud SQL. AI/ML: machine learning, NLP, generative AI, Gemini API. Tools: Git, GitHub, VS Code, Postman, Vercel, Netlify, Render.",
+  "Project GoodCabs Analytics Platform (Data Engineering): end-to-end pipeline turning raw transportation data into analytics-ready datasets. Stack: AWS S3, Databricks, PySpark, SQL, Power BI. Architecture: raw data -> S3 -> Bronze (raw) -> Silver (cleaned) -> Gold (analytics-ready) -> SQL / Power BI.",
+  "Project OLA Ride Analytics (Data Analytics): 100K+ booking records, 19 attributes; SQL, Power BI, Excel; covers bookings, revenue, cancellations, customer behaviour, vehicles and payments.",
+  "Project Airbnb Market Analysis (Data Analytics): 20,770 listings, 22 attributes; Python, Pandas, NumPy, EDA, visualization; pricing and market trends.",
+  "Project Zepto Analytics Dashboard (Business Intelligence): Power BI and SQL dashboard for quick-commerce analytics.",
+  "Project M2 Material Data Analysis (Business Intelligence): Excel, Power BI, SQL; data preparation, analysis and dashboarding.",
+  "Project AI Chatbot (Machine Learning): Python, NLP, Flask and the Gemini API.",
+  "Contact: email omkaryelsange1010@gmail.com; GitHub https://github.com/OmkarYelsange; LinkedIn https://www.linkedin.com/in/omkar-yelsange; portfolio https://omkaryelsange.vercel.app."
+ ],
+ "qa": [
+  {
+   "q": "Who are you?",
+   "keywords": "who you about introduce yourself omkar",
+   "a": "I'm Omkar Yelsange, a Data Analyst and aspiring Data Engineer based in Pune. I work with Python, SQL, Power BI, Databricks, PySpark and AWS, and I'm interested in how raw data becomes reliable pipelines, dashboards and decisions."
+  },
+  {
+   "q": "What is your current role?",
+   "keywords": "current role job working now autoline",
+   "a": "I'm a Data Analyst at Autoline Industries Ltd. (June 2026 to present). My work there includes collecting live sensor data from industrial grinding machines."
+  },
+  {
+   "q": "What roles are you looking for?",
+   "keywords": "roles looking target hire position opportunity",
+   "a": "Data Analyst, Data Engineer / Junior Data Engineer, Data Scientist / Junior Data Scientist, Business Intelligence and Data / ML roles."
+  },
+  {
+   "q": "Tell me about your experience",
+   "keywords": "experience internship internships work history",
+   "a": "Current: Data Analyst at Autoline Industries Ltd. (June 2026 to present). Internships: Data Analyst at Autoline Industries, Project Management Intern at Lumax Cornaglia Auto Technologies, and Full Stack Developer Intern at Drushya Digital India Pvt. Ltd."
+  },
+  {
+   "q": "What are your key skills?",
+   "keywords": "skills tech stack technologies tools know",
+   "a": "Programming: Python, SQL, C++, JavaScript. Analytics: Power BI, Excel, DAX, EDA. Data engineering: Databricks, PySpark, AWS S3/Athena/Glue, ETL/ELT, Medallion architecture. Databases: MySQL, PostgreSQL, MongoDB. AI/ML: machine learning, NLP, generative AI, Gemini API."
+  },
+  {
+   "q": "Which projects should I look at first?",
+   "keywords": "projects best work portfolio built",
+   "a": "Start with GoodCabs Analytics Platform (AWS S3 + Databricks + PySpark + Power BI with a Bronze/Silver/Gold design), then OLA Ride Analytics (100K+ bookings, 19 attributes) and Airbnb Market Analysis (20,770 listings, 22 attributes)."
+  },
+  {
+   "q": "Tell me about the GoodCabs project",
+   "keywords": "goodcabs good cabs databricks medallion pipeline",
+   "a": "GoodCabs is an end-to-end data engineering project: raw transportation data lands in AWS S3, is processed in Databricks through Bronze (raw), Silver (cleaned) and Gold (analytics-ready) layers using PySpark and SQL, and is analysed in Power BI."
+  },
+  {
+   "q": "What is your education?",
+   "keywords": "education degree college school marks percentage cgpa hsc ssc",
+   "a": "B.E. Robotics & Automation Engineering, D Y Patil College of Engineering, Akurdi, Pune (2022-2026), CGPA 8.90. HSC: D P Mehta Jr College, Lonavala (2021-2022), 64.33%. SSC: Adv Bapusaheb Bhonde High School, Lonavala (2019-2020), 80%."
+  },
+  {
+   "q": "Do you work with data engineering tools?",
+   "keywords": "data engineering databricks pyspark aws s3 glue athena etl",
+   "a": "Yes. I work with Databricks, PySpark, AWS S3, Athena and Glue, ETL/ELT patterns, data warehousing and the Medallion architecture; GoodCabs is my main end-to-end example."
+  },
+  {
+   "q": "Are you open to relocation?",
+   "keywords": "relocate relocation remote location move",
+   "a": "I'm based in Pune/Lonavala and open to relocation across India."
+  },
+  {
+   "q": "How can I contact you or get your resume?",
+   "keywords": "contact email resume cv linkedin github reach hire",
+   "a": "Email: omkaryelsange1010@gmail.com. GitHub: github.com/OmkarYelsange. LinkedIn: linkedin.com/in/omkar-yelsange. You can download my resume from the Resume button on this site."
+  }
+ ]
+}
