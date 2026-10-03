@@ -37,3 +37,23 @@ html[data-theme=light] .grid-bg{background-image:linear-gradient(rgba(60,50,160,
 .bg-card{backdrop-filter:blur(8px)}
 @keyframes marquee{to{transform:translateX(-50%)}}
 .marquee{display:flex;width:max-content;animation:marquee 32s linear infinite}
+/* ---- hover & interaction polish ---- */
+.lift{transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,border-color .35s}
+.lift:hover{transform:translateY(-4px);border-color:color-mix(in oklab,var(--color-accent) 55%,transparent);box-shadow:0 18px 40px -20px color-mix(in oklab,var(--color-accent) 55%,transparent)}
+.chip{transition:background .2s,color .2s,transform .2s}
+.chip:hover{background:color-mix(in oklab,var(--color-accent) 20%,transparent);color:var(--color-fg);transform:translateY(-2px)}
+.u-link{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .3s}
+.u-link:hover{background-size:100% 1px}
+.btn-shine{overflow:hidden;transition:transform .25s,box-shadow .25s,filter .25s}
+.btn-shine::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.45) 50%,transparent 70%);transform:translateX(-120%);transition:transform .6s}
+.btn-shine:hover{transform:translateY(-2px);box-shadow:0 10px 28px -10px color-mix(in oklab,var(--color-accent) 70%,transparent)}
+.btn-shine:hover::after{transform:translateX(120%)}
+button,a{-webkit-tap-highlight-color:transparent}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.floaty{animation:floaty 5s ease-in-out infinite}
+@keyframes spin-slow{to{transform:rotate(360deg)}}
+.spin-slow{animation:spin-slow 18s linear infinite}
+.btn-shine:not(.fixed){position:relative}
+body{overflow-x:clip}
+.stagger>*{opacity:0;transform:translateY(44px) scale(.9);filter:blur(8px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1),filter .7s ease}
+.stagger.in>*{opacity:1;transform:none;filter:none}

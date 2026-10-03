@@ -20,7 +20,7 @@ export default function ContactForm() {
       <label className="block text-sm">Name<input name="name" required className={cls} /></label>
       <label className="block text-sm">Email<input name="email" type="email" required className={cls} /></label>
       <label className="block text-sm">Message<textarea name="message" required rows={4} className={cls} /></label>
-      <button disabled={st === 'sending'} className="rounded-lg bg-gradient-to-r from-accent to-cyan px-5 py-3 font-semibold text-bg disabled:opacity-60">{st === 'sending' ? 'Sending…' : 'Send message'}</button>
+      <button disabled={st === 'sending'} className="rounded-lg btn-shine bg-gradient-to-r from-accent to-cyan px-5 py-3 font-semibold text-bg disabled:opacity-60">{st === 'sending' ? 'Sending…' : 'Send message'}</button>
       <p role="status" className="text-sm">{st === 'ok' && 'Thanks, your message was sent.'}{st === 'error' && <span className="text-red-400">{msg}</span>}</p>
     </form>)
 }

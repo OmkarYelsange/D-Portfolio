@@ -2,10 +2,11 @@ import { lazy, Suspense, useEffect, useState } from 'react'
 import { Star, GitFork } from 'lucide-react'
 import { siteConfig } from '../data/siteConfig'
 import { education } from '../data/education'
+import Timeline from './Timeline'
 import { Heatmap } from './Extras'
 
 const S = ({ id, title, sub, children }: { id?: string; title: string; sub?: string; children: React.ReactNode }) => (
-  <section id={id} className="mx-auto max-w-[1200px] px-6 py-20"><h2 className="text-3xl font-bold">{title}</h2>
+  <section id={id} className="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20"><h2 className="text-2xl font-bold sm:text-3xl">{title}</h2>
     {sub && <p className="mt-2 text-fg2">{sub}</p>}<div className="mt-8">{children}</div></section>)
 
 const steps = [['Understand', 'What problem are we solving?'], ['Collect', 'Where does the data come from?'], ['Clean', 'Can we trust the data?'],
@@ -13,7 +14,7 @@ const steps = [['Understand', 'What problem are we solving?'], ['Collect', 'Wher
 export const Process = () => (
   <S title="How I work with data">
     <ol data-stagger className="stagger grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-      {steps.map(([t, q], i) => <li key={t} className="rounded-2xl border border-white/10 bg-card p-5"><span className="font-mono text-xs text-cyan">Step {i + 1}</span>
+      {steps.map(([t, q], i) => <li key={t} className="lift rounded-2xl border border-white/10 bg-card p-5"><span className="font-mono text-xs text-cyan">Step {i + 1}</span>
         <h3 className="mt-1 font-semibold">{t}</h3><p className="text-sm text-fg2">{q}</p></li>)}
     </ol>
   </S>)
@@ -21,12 +22,16 @@ export const Process = () => (
 const build = [['Data analytics', 'Turning data into insights and decisions.'], ['Data engineering', 'Building reliable data pipelines and analytics-ready datasets.'], ['Data / ML', 'Exploring intelligent systems using machine learning and generative AI.']]
 export const WhatIBuild = () => (
   <S title="What I build"><div data-stagger className="stagger grid gap-5 md:grid-cols-3">
-    {build.map(([t, d]) => <div key={t} className="rounded-2xl border border-white/10 bg-card p-6"><h3 className="font-semibold text-accent">{t}</h3><p className="mt-2 text-fg2">{d}</p></div>)}</div></S>)
+    {build.map(([t, d]) => <div key={t} className="lift rounded-2xl border border-white/10 bg-card p-6"><h3 className="font-semibold text-accent">{t}</h3><p className="mt-2 text-fg2">{d}</p></div>)}</div></S>)
 
 export const Education = () => (
-  <S id="education" title="Education"><ol data-stagger className="stagger grid gap-4 md:grid-cols-3">
-    {education.map(e => <li key={e.degree} className="rounded-2xl border border-white/10 bg-card p-5"><p className="font-mono text-xs text-cyan">{e.years}</p><h3 className="mt-1 font-semibold">{e.degree}</h3><p className="text-sm text-fg2">{e.school}</p><p className="mt-3 inline-block rounded-full bg-accent/15 px-3 py-1 font-mono text-xs text-accent">{e.score}</p></li>)}
-  </ol></S>)
+  <S id="education" title="Education">
+    <Timeline items={education.map(e => (
+      <div key={e.degree} className="lift rounded-2xl border border-white/10 bg-card p-5">
+        <p className="font-mono text-xs text-cyan">{e.years}</p><h3 className="mt-1 font-semibold">{e.degree}</h3><p className="text-sm text-fg2">{e.school}</p>
+        <p className="mt-3 inline-block rounded-full bg-accent/15 px-3 py-1 font-mono text-xs text-accent">{e.score}</p>
+      </div>))} />
+  </S>)
 
 interface Repo { id: number; name: string; description: string | null; language: string | null; stargazers_count: number; forks_count: number; pushed_at: string; html_url: string }
 export function GitHub() {
@@ -40,7 +45,7 @@ export function GitHub() {
       {state === 'loading' && <p className="text-fg2" role="status">Loading repositories…</p>}
       {state === 'error' && <p className="text-fg2">Couldn't load repositories right now. Browse them on <a className="text-accent underline" href={siteConfig.social.github}>GitHub</a>.</p>}
       <div data-stagger className="stagger grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {repos.map(r => <a key={r.id} href={r.html_url} target="_blank" rel="noreferrer" className="rounded-2xl border border-white/10 bg-card p-5 transition hover:border-accent/50">
+        {repos.map(r => <a key={r.id} href={r.html_url} target="_blank" rel="noreferrer" className="lift rounded-2xl border border-white/10 bg-card p-5 transition hover:border-accent/50">
           <h3 className="font-mono text-sm font-semibold">{r.name}</h3><p className="mt-2 text-sm text-fg2">{r.description ?? 'No description.'}</p>
           <p className="mt-4 flex gap-4 text-xs text-muted"><span>{r.language ?? '—'}</span><span className="flex items-center gap-1"><Star size={12} />{r.stargazers_count}</span>
             <span className="flex items-center gap-1"><GitFork size={12} />{r.forks_count}</span><span>Updated {new Date(r.pushed_at).toLocaleDateString()}</span></p></a>)}
@@ -53,7 +58,7 @@ export const posts: { title: string; url: string }[] = [] // TODO: add real arti
 export const Blog = () => (
   <S title="From my notebook" sub="Technical articles, experiments and lessons from working with data.">
     {posts.length === 0 ? <p className="text-muted">Articles are coming soon.</p> :
-      <ul className="grid gap-4 sm:grid-cols-2">{posts.map(p => <li key={p.url}><a className="block rounded-2xl border border-white/10 bg-card p-5" href={p.url}>{p.title}</a></li>)}</ul>}
+      <ul className="grid gap-4 sm:grid-cols-2">{posts.map(p => <li key={p.url}><a className="block lift rounded-2xl border border-white/10 bg-card p-5" href={p.url}>{p.title}</a></li>)}</ul>}
   </S>)
 
 const Shape3D = lazy(() => import('./Scenes').then(m => ({ default: m.Shape3D })))
@@ -61,7 +66,7 @@ export const ResumeCTA = () => (
   <S title="Ready to work with data?" sub="Explore my resume to learn more about my experience, projects and technical background.">
     <div className="grid items-center gap-6 md:grid-cols-2">
       <div className="flex gap-3 text-sm font-semibold">
-        <a className="rounded-lg bg-gradient-to-r from-accent to-cyan px-5 py-3 text-bg transition hover:brightness-110" href={siteConfig.resume} target="_blank" rel="noreferrer">View resume</a>
+        <a className="rounded-lg btn-shine bg-gradient-to-r from-accent to-cyan px-5 py-3 text-bg transition hover:brightness-110" href={siteConfig.resume} target="_blank" rel="noreferrer">View resume</a>
         <a className="rounded-lg border border-white/15 px-5 py-3" href={siteConfig.resume} download>Download resume</a></div>
       <Suspense fallback={<div className="h-56" />}><Shape3D kind="ico" /></Suspense>
     </div></S>)

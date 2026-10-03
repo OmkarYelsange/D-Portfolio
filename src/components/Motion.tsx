@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { animate, motion, useInView, useMotionValue, useReducedMotion, useSpring } from 'framer-motion'
 
 export function Reveal({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
-  return <motion.div initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-80px' }} transition={{ duration: 0.6, delay, ease: 'easeOut' }}>{children}</motion.div>
+  return <motion.div initial={{ opacity: 0, y: 70, scale: 0.9, filter: 'blur(12px)' }} whileInView={{ opacity: 1, y: 0, scale: 1, filter: 'blur(0px)' }} viewport={{ once: true, margin: '-60px' }} transition={{ duration: 0.8, delay, ease: [0.2, 0.7, 0.2, 1] }}>{children}</motion.div>
 }
 
 export function Counter({ to }: { to: number }) {
