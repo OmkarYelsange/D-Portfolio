@@ -7,8 +7,8 @@ export function TechMatrix() {
   projects.forEach(p => p.technologies.forEach(t => map.set(t, [...(map.get(t) ?? []), p.title])))
   const rows = [...map.entries()].sort((a, b) => b[1].length - a[1].length)
   return (
-    <section className="mx-auto max-w-[1200px] px-6 py-20" aria-labelledby="tm">
-      <h2 id="tm" className="text-3xl font-bold">Technologies by project</h2>
+    <section className="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-20" aria-labelledby="tm">
+      <h2 id="tm" className="text-2xl font-bold sm:text-3xl">Technologies by project</h2>
       <p className="mt-2 text-fg2">Where each tool has been used.</p>
       <dl data-stagger className="stagger mt-8 grid gap-3 sm:grid-cols-2">
         {rows.map(([t, ps]) => <div key={t} className="rounded-xl border border-white/10 bg-card p-4"><dt className="font-mono text-sm text-accent">{t}</dt><dd className="mt-1 text-sm text-fg2">{ps.join(' · ')}</dd></div>)}
